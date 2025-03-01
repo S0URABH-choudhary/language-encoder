@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shift Cipher with Secret Word</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Shift Cipher with Secret Word</h2>
+      <div id="form-container">
+        <div class="input-container">
+          <input type="text" id="inputText" placeholder="Enter text here" />
+          <button
+            class="copy-btn"
+            id="copybutton"
+            onclick="copyText() ,animation()"
+          >
+          📋
+          </button>
+        </div>
+        <input type="text" id="secretWord" placeholder="Enter secret word" />
+        <div id="encoding-buttom-containee">
+          <button onclick="encodeText()">Encode</button>
+          <button onclick="decodeText()">Decode</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

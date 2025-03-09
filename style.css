@@ -21,7 +21,7 @@ main>h2{
   width: max-content;
     position: absolute;
     top: 20%;
-    font-size: ;
+    font-size: 3vw;
 }
 #form-container{
     display: flex;

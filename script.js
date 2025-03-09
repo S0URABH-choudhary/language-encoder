@@ -45,11 +45,6 @@ function getShiftValue(secret) {
     input.value = shiftCipher(input.value, -shiftValue);
   }
 
-  function copyText() {
-    let input = document.getElementById("inputText");
-    input.select();
-    document.execCommand("copy");
-  }
   function animation() {
     setTimeout(function () {
       let icon = document.getElementById("copybutton");
@@ -60,4 +55,10 @@ function getShiftValue(secret) {
           },1000)
       }
     },500);
+  }
+  function copyText() {
+    let input = document.getElementById("inputText");
+    input.select();
+    document.execCommand("copy");
+    animation();
   }

@@ -18,8 +18,10 @@ main{
 }
 
 main>h2{
+  width: max-content;
     position: absolute;
     top: 20%;
+    font-size: ;
 }
 #form-container{
     display: flex;
@@ -62,3 +64,22 @@ input {
 .copy-btn:hover {
   background: #0056b3;
 }
+
+#encoding-buttom-container button{
+  border: transparent;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 8px;
+  margin-inline: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+  .input-container,input{
+    width: 90%;
+  }
+  main>h2{
+    font-size: 6vw;
+  }
+}
+
